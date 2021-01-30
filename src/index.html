@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title> Curriculum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Curriculum"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/styles/main.scss" />
+  </head>
+
+  <body>
+      <div class="title">
+        <h1 >SUDOKU</h1>
+      </div>
+      <div class="control">
+        <a href="#" id="comprobar" class="start_control"> Comprobar</a>
+        <a href="index.html" class="reset_control"> Reiniciar</a>
+       <div id="zonaContador" class="start_control"></div>
+    </div>
+    
+    <div class="game">
+        
+        <div class="tablero">
+            <div class="zonas borde-bottom">
+                <div class="rect"><input type="text" maxlength="1" id="A0" placeholder=""/></input></div>
+                <div class="rect"><input id="A1" maxlength="1"></input></div>
+                <div class="rect"><input id="B0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="B1" maxlength="1"></input></div>
+            </div>
+        </div>
+
+        <div class="tablero">
+            <div class="zonas borde-left borde-bottom">
+                <div class="rect"><input id="A2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="A3" maxlength="1"></input></div>
+                <div class="rect"><input id="B2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="B3" maxlength="1"></input></div>
+            </div>
+        </div>
+    </div>
+    <div class="game">
+        
+        <div class="tablero">
+            <div class="zonas ">
+                <div class="rect"><input id="C0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="C1" maxlength="1"></input></div>
+                <div class="rect"><input id="D0" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="D1" maxlength="1"></input></div>
+            </div>
+        </div>
+
+        <div class="tablero">
+            <div class="zonas borde-left">
+                <div class="rect"><input id="C2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="C3" maxlength="1"></input></div>
+                <div class="rect"><input id="D2" maxlength="1" placeholder=""></input></div>
+                <div class="rect"><input id="D3" maxlength="1"></input></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="view_winner" class="winner">
+        <p><span id="winner"></span></p>
+    </div>
+
+  <script src="./assets/script/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
